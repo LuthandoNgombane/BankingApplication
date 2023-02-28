@@ -1,0 +1,27 @@
+{
+  "name": "reduxreactapplication",
+  "description": "A brief description of your app",
+  "repository": "https://github.com/yourusername/yourrepository",
+  "keywords": [
+    "react",
+    "javascript"
+  ],
+  "env": {
+    "NODE_ENV": {
+      "value": "production"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/mars/create-react-app-buildpack.git"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "npm run build"
+  },
+  "environments": {
+    "heroku": {
+      "stack": "heroku-20"
+    }
+  }
+}
